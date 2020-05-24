@@ -1,4 +1,4 @@
-package com.LucasVerrier.topquizz;
+package com.LucasVerrier.topquizz.controler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.LucasVerrier.topquizz.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
         mPlaybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,GameActivity.class));
-                
+                Intent gameActivityIntent = new Intent(MainActivity.this, GameActivity.class);
+                startActivity(gameActivityIntent);
+
+
 
             }
         });
