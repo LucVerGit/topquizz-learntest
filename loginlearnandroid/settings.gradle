@@ -1,0 +1,2 @@
+rootProject.name='login-learn-android'
+include ':app'
